@@ -65,7 +65,7 @@ First, clone the repository to your local machine using Git:
 git clone https://github.com/your-username/osteoporosis-detection.git
 cd osteoporosis-detection
 ```
-###2. Set Up the Virtual Environment
+### 2. Set Up the Virtual Environment
 It is recommended to use a virtual environment to manage dependencies. If you are using venv, run the following commands:
 
 ```bash
@@ -73,14 +73,14 @@ Copy code
 python3 -m venv venv
 source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
 ```
-###3. Install Dependencies
+### 3. Install Dependencies
 Install all necessary libraries by running the following command:
 
 ```bash
 Copy code
 pip install -r requirements.txt
 ```
-###4. Prepare the Dataset
+### 4. Prepare the Dataset
 Ensure your dataset is structured as follows:
 
 ```bash
@@ -97,7 +97,7 @@ Copy code
 Update the dataset path in the script to match your directory structure.
 ```
 
-###5. Train the Model
+### 5. Train the Model
 Configure the dataset path and adjust any hyperparameters (like learning rate, batch size, and epochs) in the script. Then, run the training script:
 
 ```bash
@@ -106,17 +106,17 @@ python train_model.py
 You can monitor the training process through TensorBoard or by reviewing the logs.
 ```
 
-###6. Test the Model
+### 6. Test the Model
 Once the model is trained, you can evaluate its performance on the test dataset by running the evaluation script:
 
 ```bash
 Copy code
 python evaluate_model.py
 ```
-###7. Analyze the Results
+### 7. Analyze the Results
 After testing, review the results, including performance metrics such as accuracy, precision, recall, and F1-score. You can also view class activation maps and accuracy/loss plots for further analysis.
 
-###8. Run the GUI (Optional)
+### 8. Run the GUI (Optional)
 To run the graphical user interface for interactive analysis, use the following command:
 
 ```bash
@@ -125,7 +125,7 @@ python gui.py
 ```
 This will open the Tkinter-based interface where you can upload and classify images.
 
-###9. Future Enhancements
+### 9. Future Enhancements
 Integrate the model with telemedicine platforms for real-world applications.
 Extend the model for diagnosing other bone-related conditions.
 Optimize the model further using advanced techniques.
