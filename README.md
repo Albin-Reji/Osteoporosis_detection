@@ -122,7 +122,7 @@ To run the graphical user interface for interactive analysis, use the following 
 
 ```bash
 Copy code
-python gui.py
+python main_testing.py
 ```
 This will open the Tkinter-based interface where you can upload and classify images.
 
