@@ -71,7 +71,8 @@ It is recommended to use a virtual environment to manage dependencies. If you ar
 ```bash
 Copy code
 python3 -m venv venv
-source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
+source venv/bin/activate
+On Windows use 'venv\Scripts\activate'
 ```
 ### 3. Install Dependencies
 Install all necessary libraries by running the following command:
@@ -86,11 +87,11 @@ Ensure your dataset is structured as follows:
 ```bash
 Copy code
 ./dataset/
-├── class_1/
+├── normal/
 │   ├── img1.jpg
 │   ├── img2.jpg
 │   └── ...
-├── class_2/
+├── osteoporosis/
 │   ├── img1.jpg
 │   ├── img2.jpg
 │   └── ...
@@ -102,7 +103,7 @@ Configure the dataset path and adjust any hyperparameters (like learning rate, b
 
 ```bash
 Copy code
-python train_model.py
+python cnn2d_training.py
 You can monitor the training process through TensorBoard or by reviewing the logs.
 ```
 
@@ -111,7 +112,7 @@ Once the model is trained, you can evaluate its performance on the test dataset 
 
 ```bash
 Copy code
-python evaluate_model.py
+python main_testing.py
 ```
 ### 7. Analyze the Results
 After testing, review the results, including performance metrics such as accuracy, precision, recall, and F1-score. You can also view class activation maps and accuracy/loss plots for further analysis.
